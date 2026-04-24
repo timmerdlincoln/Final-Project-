@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Citations — Final Project</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#fcf9f4",
+            "on-surface": "#1c1c19",
+            "primary": "#17341d",
+            "secondary": "#6b5c40",
+            "outline-variant": "#c2c8bf",
+            "surface-container-low": "#f6f3ee",
+            "surface-container-lowest": "#ffffff",
+            "background": "#fcf9f4",
+          },
+          fontFamily: {
+            headline: ["Newsreader", "serif"],
+            body: ["Manrope", "sans-serif"],
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: 'Manrope', sans-serif; }
+    h1, h2 { font-family: 'Newsreader', serif; }
+    .nav-link { position: relative; }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #17341d;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface">
+
+  <!-- Top Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 backdrop-blur-md">
+    <div class="flex items-center max-w-7xl mx-auto px-8 h-20 grid grid-cols-3">
+      <div class="font-['Newsreader'] text-2xl font-bold text-[#17341d] tracking-tighter justify-self-start">Final Project</div>
+      <div class="flex gap-8 items-center font-['Newsreader'] font-medium text-lg tracking-tight justify-center">
+        <a class="nav-link text-[#6b5c40] hover:text-[#17341d] transition-colors duration-300" href="index.html">Story</a>
+        <a class="nav-link text-[#6b5c40] hover:text-[#17341d] transition-colors duration-300" href="knowledge.html">Knowledge</a>
+        <a class="nav-link active text-[#17341d]" href="citations.html">Citations</a>
+      </div>
+      <div class="hidden md:block"></div>
+    </div>
+  </nav>
+
+  <main class="pt-32 pb-24">
+    <div class="max-w-3xl mx-auto px-8">
+      <h1 class="text-5xl font-bold text-primary tracking-tight mb-4 italic">Citations</h1>
+      <p class="text-secondary mb-16">APA formatted references used throughout this project.</p>
+
+      <div class="space-y-8">
+        <div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm border border-outline-variant/20">
+          <p class="text-on-surface leading-relaxed" style="text-indent: -2rem; padding-left: 2rem;">Finch, B. (2015, September). The true story of kudzu, the vine that never truly ate the South. <em>Smithsonian Magazine</em>. <a href="https://www.smithsonianmag.com/science-nature/true-story-kudzu-vine-ate-south-180956325/" class="text-primary underline break-all">https://www.smithsonianmag.com/science-nature/true-story-kudzu-vine-ate-south-180956325/</a></p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm border border-outline-variant/20">
+          <p class="text-on-surface leading-relaxed" style="text-indent: -2rem; padding-left: 2rem;">Grebner, D. L., Bettinger, P., Siry, J. P., & Boston, K. (2021). Kudzu. In <em>Introduction to forestry and natural resources</em> (2nd ed.). Academic Press. <a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/kudzu" class="text-primary underline break-all">https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/kudzu</a></p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm border border-outline-variant/20">
+          <p class="text-on-surface leading-relaxed" style="text-indent: -2rem; padding-left: 2rem;">Loewenstein, N. J., Enloe, S. F., Everest, J. W., Miller, J. H., Ball, D. M., & Patterson, M. G. (2022, March 8). History and use of kudzu in the southeastern United States. <em>Alabama Cooperative Extension System</em>. <a href="https://www.aces.edu/blog/topics/forestry-wildlife/the-history-and-use-of-kudzu-in-the-southeastern-united-states/" class="text-primary underline break-all">https://www.aces.edu/blog/topics/forestry-wildlife/the-history-and-use-of-kudzu-in-the-southeastern-united-states/</a></p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm border border-outline-variant/20">
+          <p class="text-on-surface leading-relaxed" style="text-indent: -2rem; padding-left: 2rem;">The Nature Conservancy. (n.d.). Kudzu: The invasive vine that ate the South. <a href="https://www.nature.org/en-us/about-us/where-we-work/united-states/indiana/stories-in-indiana/kudzu-invasive-species/" class="text-primary underline break-all">https://www.nature.org/en-us/about-us/where-we-work/united-states/indiana/stories-in-indiana/kudzu-invasive-species/</a></p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm border border-outline-variant/20">
+          <p class="text-on-surface leading-relaxed" style="text-indent: -2rem; padding-left: 2rem;">Tungmunnithum, D., Intharuksa, A., & Sasaki, Y. (2020). A promising view of kudzu plant, <em>Pueraria montana</em> var. <em>lobata</em> (Willd.) Sanjappa & Pradeep: Flavonoid phytochemical compounds, taxonomic data, traditional uses and potential biological activities for future cosmetic application. <em>Cosmetics, 7</em>(1), 12. <a href="https://www.mdpi.com/2079-9284/7/1/12" class="text-primary underline break-all">https://www.mdpi.com/2079-9284/7/1/12</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
